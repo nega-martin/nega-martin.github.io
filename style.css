@@ -1,0 +1,98 @@
+html, body, #googft-mapCanvas {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.googft-info-window {
+  margin: 15px 0px 15px 15px;
+  max-width: 330px;
+  min-width: 280px;
+}
+
+.googft-info-window > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perp-image {
+  object-fit: contain;
+  width: 110px;
+  height: 150px;
+  margin-right: 20px;   
+}
+
+.incident-details b {
+  line-height: 17px;
+}
+
+.narrative {
+  margin-top: 15px;
+}
+
+.link-to-article {
+  margin-top: 15px;
+}
+
+.color-box {
+  display: inline-block;
+  margin-right: 10px;
+  width: 10px;
+  height: 10px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;    
+}
+
+.group {
+  display: inline-block;
+  position: relative;
+  top: -2px;    
+}
+
+.gm-style-iw {
+  top: 0 !important;
+  left: 0 !important;
+  position: relative !important;
+  margin-right: 0;
+}
+
+.gm-style-iw > div {
+  overflow: hidden !important;
+}
+
+#legend {
+  background-color: #fffaf2;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+select {
+  padding-right: 10px;
+  background-color: white;
+  margin: 5px;
+  position: absolute;
+  top: 5px;
+  border-radius: 2px;
+  border: none;
+  color: #303030;
+  font-size: 11px;
+  font-weight: bold;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.desktop-select {
+  height: 29px;
+  left: 105px;
+  padding-left: 8px;
+}
+
+.mobile-select {
+  height: 35px;
+  left: 115px;
+  padding-left: 10px;
+  -webkit-appearance: none;
+}
