@@ -48,13 +48,8 @@ html, body, #googft-mapCanvas {
 }
  
 .narrative {
-  margin: 5px;
+  margin-top: 5px;
 }
-
-.narrative > div {
-  margin-bottom: 5px;
-}
-
 
 .link-to-article {
   margin-top: 10px;
