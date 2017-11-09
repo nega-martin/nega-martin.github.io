@@ -21,7 +21,7 @@ function addLegend(map) {
   var legendWrapper = document.createElement('div');
   legendWrapper.id = 'legendWrapper';
   legendWrapper.index = 1;
-  map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legendWrapper);
+  map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(legendWrapper);
   legendContent(legendWrapper, column);
 }
 

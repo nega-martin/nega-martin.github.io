@@ -84,7 +84,7 @@ html, body, #googft-mapCanvas {
 }
 
 .gm-style-iw > div {
-  overflow: hidden !important;
+  overflow: auto !important;
 }
 
 #legend {
