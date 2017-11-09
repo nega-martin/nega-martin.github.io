@@ -6,9 +6,10 @@ html, body, #googft-mapCanvas {
 }
 
 .googft-info-window {
-  margin: 15px 0px 15px 15px;
+  margin: 15px 0px 0px 15px;
   max-width: 330px;
   min-width: 280px;
+  color: #161616;
 }
 
 .googft-info-window > div {
@@ -27,12 +28,36 @@ html, body, #googft-mapCanvas {
   line-height: 17px;
 }
 
-.narrative {
-  margin-top: 15px;
+.incident-details h2 {
+  margin: 5px 0 0 0;
 }
 
+.personal-details span:first-child {
+  margin-right: 3px;
+  margin-left: 0px;
+}
+
+.personal-details span {
+  margin: 0px 3px;
+}
+
+.personal-details {
+  color: #292929;
+  margin-bottom: 6px;
+  margin-top: 1px;
+}
+ 
+.narrative {
+  margin: 5px;
+}
+
+.narrative > div {
+  margin-bottom: 5px;
+}
+
+
 .link-to-article {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .color-box {
