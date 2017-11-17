@@ -45,14 +45,16 @@ html, body, #googft-mapCanvas {
   color: #292929;
   margin-bottom: 6px;
   margin-top: 1px;
+  min-width: 200px;
 }
  
 .narrative {
   margin-top: 5px;
+  margin-bottom: 8px;
 }
 
 .link-to-article {
-  margin-top: 10px;
+  margin-top: 2px;
   display: inline-block !important;
   margin-right: 6px;
 }
