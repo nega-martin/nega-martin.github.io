@@ -1,16 +1,17 @@
 var COLUMN_STYLES = {
-  'Hoax Beneficiaries': [
-    {"group": "Non-Whites", 'color': '#5880FC'},
+  'Fake Victim Group': [
+    {"group": "Blacks", 'color': '#5880FC'},
     {"group": "Whites", 'color': '#FFFFFF'},
-    {"group": "Other", 'color': '#8EFEEE'},
-    {"group": "Muslims/Arabs", 'color': '#5FFD81'},
-    {"group": "LGBT", 'color': '#FC6356'}
+    {"group": "Arabs/Muslims", 'color': '#5FFD81'},
+    {"group": "LGBT", 'color': '#FC6355'},
+    {"group": "Other", 'color': '#FCF457'}
   ],
-  'Group Falsely Accused': [
-    {'group': "Whites", 'color': '#FFFFFF'},
-    {'group': "Heterosexuals", 'color': '#FCF356'},
-    {'group': "Blacks", 'color': '#5880FC'},
-    {'group': "Unknown/None", 'color': '#8EFEEE'}
+  'Race': [
+    {'group': "Black", 'color': '#5880FC'},
+    {'group': "White", 'color': '#FFFFFF'},
+    {'group': "Middle Eastern", 'color': '#00DF3C'},
+    {'group': "Hispanic", 'color': '#FF9B00'},
+    {"group": "Other", 'color': '#FCF457'}
   ]
 };
 
@@ -89,17 +90,18 @@ function initialize() {
     heatmap: { enabled: false },
     query: {
       select: "Address",
-      from: "1ZqWOgWVNehnvFHJR1NNMspCXNJdElNwtnTya6EOD"
+      from: "1vyAdLG4owA64OGnLCsedOnTZWCc0uIX6LDQ2rkcD"
     },
     options: {
       styleId: 2,
       templateId: 2
     },
     styles: [
-      { markerOptions: { iconName: 'ltblu_circle' }},
-      { where: "'Group Falsely Accused' = 'Whites'", markerOptions: { iconName: 'wht_circle' }}, 
-      { where: "'Group Falsely Accused' = 'Heterosexuals'", markerOptions: { iconName: 'ylw_circle' }},
-      { where: "'Group Falsely Accused' = 'Blacks'", markerOptions: { iconName: 'blu_circle' }}
+      { markerOptions: { iconName: 'ylw_circle' }},
+      { where: "'Race' = 'White'", markerOptions: { iconName: 'wht_circle' }}, 
+      { where: "'Race' = 'Hispanic'", markerOptions: { iconName: 'orange_circle' }},
+      { where: "'Race' = 'Black'", markerOptions: { iconName: 'blu_circle' }},
+      { where: "'Race' = 'Middle Eastern'", markerOptions: { iconName: 'grn_circle' }}
     ]
   });
 
@@ -107,40 +109,44 @@ function initialize() {
     heatmap: { enabled: false },
     query: {
       select: "Address",
-      from: "1ZqWOgWVNehnvFHJR1NNMspCXNJdElNwtnTya6EOD"
+      from: "1vyAdLG4owA64OGnLCsedOnTZWCc0uIX6LDQ2rkcD"
     },
     options: {
       styleId: 2,
       templateId: 2
     },
     styles: [
-      {markerOptions: { iconName: 'ltblu_circle' }},
-      { where: "'Hoax Beneficiaries' = 'Non-Whites'", markerOptions: { iconName: 'blu_circle' }},
-      { where: "'Hoax Beneficiaries' = 'Whites'", markerOptions: { iconName: 'wht_circle' }},
-      { where: "'Hoax Beneficiaries' = 'LGBT'", markerOptions: { iconName: 'red_circle' }},
-      { where: "'Hoax Beneficiaries' = 'Arabs/Muslims'", markerOptions: { iconName: 'grn_circle' }}      
+      {markerOptions: { iconName: 'ylw_circle' }},
+      { where: "'Fake Victim Group' = 'Blacks'", markerOptions: { iconName: 'blu_circle' }},
+      { where: "'Fake Victim Group' = 'Whites'", markerOptions: { iconName: 'wht_circle' }},
+      { where: "'Fake Victim Group' = 'LGBT'", markerOptions: { iconName: 'red_circle' }},
+      { where: "'Fake Victim Group' = 'Arabs/Muslims'", markerOptions: { iconName: 'grn_circle' }}      
     ]
   });
 
   hoaxBeneficiariesLayer.setMap(map);
-  window.column = 'Hoax Beneficiaries';
+  window.column = 'Fake Victim Group';
   addLegend(map);
   initSelectmenu();
   
   google.maps.event.addDomListener(document.getElementById('selector'),
     'change', function() {
       var selectedColumn = this.value;
-      if (this.value == "Group Falsely Accused") {
+      if (this.value == "Race") {
         hoaxBeneficiariesLayer.setMap(null);
         groupFalselyImplicatedLayer.setMap(map);
-        window.column = "Group Falsely Accused";
-      } else if (this.value == "Hoax Beneficiaries") {
+        window.column = "Race";
+      } else if (this.value == "Fake Victim Group") {
         groupFalselyImplicatedLayer.setMap(null);
         hoaxBeneficiariesLayer.setMap(map);
-        window.column = "Hoax Beneficiaries";
+        window.column = "Fake Victim Group";
       }
       addLegend(map);
     });
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+// group fraudlently claimed to have been victimized
+
+// display instituation as location
+// no group falsely accused
