@@ -116,6 +116,7 @@ select {
   height: 29px;
   left: 105px;
   padding-left: 8px;
+  -moz-appearance: none;
 }
 
 .mobile-select {
