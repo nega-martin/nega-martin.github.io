@@ -6,7 +6,7 @@ var COLUMN_STYLES = {
     {"group": "LGBT", 'color': '#FC6355'},
     {"group": "Other", 'color': '#FCF457'}
   ],
-  'Race': [
+  'Race of Hoaxer': [
     {'group': "Black", 'color': '#5880FC'},
     {'group': "White", 'color': '#FFFFFF'},
     {'group': "Middle Eastern", 'color': '#00DF3C'},
@@ -132,10 +132,10 @@ function initialize() {
   google.maps.event.addDomListener(document.getElementById('selector'),
     'change', function() {
       var selectedColumn = this.value;
-      if (this.value == "Race") {
+      if (this.value == "Race of Hoaxer") {
         hoaxBeneficiariesLayer.setMap(null);
         groupFalselyImplicatedLayer.setMap(map);
-        window.column = "Race";
+        window.column = "Race of Hoaxer";
       } else if (this.value == "Fake Victim Group") {
         groupFalselyImplicatedLayer.setMap(null);
         hoaxBeneficiariesLayer.setMap(map);
