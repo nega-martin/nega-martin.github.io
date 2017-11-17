@@ -90,7 +90,7 @@ function initialize() {
     heatmap: { enabled: false },
     query: {
       select: "Address",
-      from: "1vyAdLG4owA64OGnLCsedOnTZWCc0uIX6LDQ2rkcD"
+      from: "1nNP90M6zTZplRrP4BYpdWUCqww3lfNb5BZGK0jBm"
     },
     options: {
       styleId: 2,
@@ -109,7 +109,7 @@ function initialize() {
     heatmap: { enabled: false },
     query: {
       select: "Address",
-      from: "1vyAdLG4owA64OGnLCsedOnTZWCc0uIX6LDQ2rkcD"
+      from: "1nNP90M6zTZplRrP4BYpdWUCqww3lfNb5BZGK0jBm"
     },
     options: {
       styleId: 2,
