@@ -6,60 +6,60 @@ html, body, #googft-mapCanvas {
 }
 
 .googft-info-window {
-  margin: 15px 0px 0px 15px;
-  max-width: 330px;
-  min-width: 280px;
-  color: #161616;
+  max-width: 400px;
+  margin-top: 8px;
+  margin-left: 16px;
+  color: #3c3c3c;  
 }
 
-.googft-info-window > div {
+.infowindow-upper-box {
   display: flex;
-  justify-content: space-between;
 }
 
 .perp-image {
-  object-fit: contain;
-  width: 110px;
-  height: 150px;
-  margin-right: 20px;   
+  margin-right: 15px;
+  max-width: 40%;
 }
 
-.incident-details b {
-  line-height: 17px;
+.perp-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.incident-details h2 {
-  margin: 5px 0 0 0;
+.perp-name {
+  margin-top: 0px;
+  margin-bottom: 4px;
 }
 
-.incident-details {
-  min-width: 200px;
-}
-
-.personal-details span:first-child {
-  margin-right: 3px;
-  margin-left: 0px;
-}
-
-.personal-details span {
-  margin: 0px 3px;
-}
-
-.personal-details {
-  color: #292929;
-  margin-bottom: 6px;
-  margin-top: 1px;
-}
- 
-.narrative {
-  margin-top: 5px;
+.perp-inline-bio {
   margin-bottom: 8px;
 }
 
-.link-to-article {
-  margin-top: 2px;
-  display: inline-block !important;
+.incident-stat {
+  margin-bottom: 2px;
+}
+
+.incident-narrative {
+  margin-top: 15px;
+}
+
+.incident-sources {
+  margin-top: 15px;
+}
+
+.incident-sources > span {
+  margin-bottom: 4px;
   margin-right: 6px;
+}
+
+.incident-sources > span > a {
+  color: #0000a3;
+}
+
+
+.incident-sources > div {
+  margin-bottom: 6px;
 }
 
 .color-box {
@@ -86,7 +86,6 @@ html, body, #googft-mapCanvas {
 }
 
 .gm-style-iw > div {
-  /* overflow: initial !important; */
   margin-top: 10px;
 }
 
