@@ -2,9 +2,9 @@ var COLUMN_STYLES = {
   'Fake Victim Group': [
     {"group": "Blacks", 'color': '#5880FC'},
     {"group": "Whites", 'color': '#FFFFFF'},
-    {"group": "Arabs/Muslims", 'color': '#5FFD81'},
+    {"group": "Religious", 'color': '#5FFD81'},
     {"group": "LGBT", 'color': '#FC6355'},
-    {"group": "Other", 'color': '#FCF457'}
+    {"group": "Other Non-Whites", 'color': '#FCF457'}
   ],
   'Race of Hoaxer': [
     {'group': "Black", 'color': '#5880FC'},
