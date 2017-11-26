@@ -1,0 +1,34 @@
+{template .contents}
+<div style="max-width: 400px; margin-top: 8px;" class='googft-info-window'>
+  <div class="infowindow-upper-box" style="display: flex;">
+    <div class="perp-image" style="max-width: 40%; margin-right: 15px;"><img style="max-width: 100%;" src="{$data.value.Mugshot}" height="200px"></img></div>
+    <div>
+      <h2 class="perp-name" style="margin-top: 0px; margin-bottom: 4px;"><strong>{$data.value['Hoaxer Name']}</strong></h2>
+      <div class="perp-inline-bio" style="margin-bottom: 8px;">
+        <span><b>{$data.value.Race}</b></span> | <span><b>{$data.value.Sex}</b></span> | <span><b>{$data.value.Age}</b></span>
+      </div>
+      <div class="perp-inline-bio" style="margin-bottom: 2px;"><b>Date:</b> {$data.formatted['Incident Date']}</div>
+      <div class="perp-inline-bio" style="margin-bottom: 2px;"><b>Fake Victim Group:</b> {$data.value['Fake Victim Group']}</div>
+      <div class="perp-inline-bio" style="margin-bottom: 2px;"><b>Legal Status:</b> {$data.value['Legal Status']}</div>
+      <div class="perp-inline-bio" style="margin-bottom: 2px;"><b>Location:</b> {$data.value.Institution}</div>
+    </div>
+  </div>
+
+  {if $data.value.Narrative != '1'}
+  <div>
+    <div class="incident-narrative" style="margin-top: 15px;">
+      <div>{$data.value.Narrative}</div>
+    </div>
+  </div>
+  {/if}
+
+  <div class="incident-sources" style="margin-top: 15px;">
+    <div style="margin-bottom: 4px;"><b>Sources:</b></div>
+    <span style="margin-right: 6px;"><a target="_blank" href="{$data.value['Link 1']}">{$data.value['Source 1']}</a></span>
+    <span style="margin-right: 6px;"><a target="_blank" href="{$data.value['Link 2']}">{$data.value['Source 2']}</a></span>
+    <span style="margin-right: 6px;"><a target="_blank" href="{$data.value['Link 3']}">{$data.value['Source 3']}</a></span>
+    <span style="margin-right: 6px;"><a target="_blank" href="{$data.value['Link 4']}">{$data.value['Source 4']}</a></span>
+    <span style="margin-right: 6px;"><a target="_blank" href="{$data.value['Link 5']}">{$data.value['Source 5']}</a></span>
+  </div>
+</div>
+{/template}
