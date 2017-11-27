@@ -97,7 +97,7 @@ html, body, #googft-mapCanvas {
 }
 
 select {
-  padding-right: 10px;
+  padding-right: 35px;
   background-color: white;
   margin: 5px;
   position: absolute;
@@ -116,11 +116,28 @@ select {
   left: 105px;
   padding-left: 8px;
   -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 .mobile-select {
   height: 35px;
-  left: 105px;
+  left: 120px;
   padding-left: 10px;
+  -moz-appearance: none;
   -webkit-appearance: none;
+}
+
+i {
+  position: absolute;
+  font-style: normal;
+}
+
+.mobile-icon {
+  left: 231px;
+  top: 18px;
+}
+
+.desktop-icon {
+  left: 215px;
+  top: 15px;  
 }

@@ -59,11 +59,14 @@ function legendContent(legendWrapper, column) {
 
 function initSelectmenu() {
   var selectMenu = document.getElementById('selector');
+  var icon = document.querySelector('i');
   for (column in COLUMN_STYLES) {
     if (isMobile) {
       selectMenu.classList.add("mobile-select");
+      icon.classList.add("mobile-icon");
     } else {
       selectMenu.classList.add("desktop-select");
+      icon.classList.add("desktop-icon");
     }
     var option = document.createElement('option');
     option.setAttribute('value', column);
