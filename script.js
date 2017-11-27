@@ -1,5 +1,5 @@
 var COLUMN_STYLES = {
-  'Fake Victim Group': [
+  '\"Victim\" Group': [
     {"group": "Blacks", 'color': '#5880FC'},
     {"group": "Whites", 'color': '#FFFFFF'},
     {"group": "Religious", 'color': '#5FFD81'},
@@ -117,15 +117,15 @@ function initialize() {
     },
     styles: [
       {markerOptions: { iconName: 'ylw_circle' }},
-      { where: "'Fake Victim Group' = 'Blacks'", markerOptions: { iconName: 'blu_circle' }},
-      { where: "'Fake Victim Group' = 'Whites'", markerOptions: { iconName: 'wht_circle' }},
-      { where: "'Fake Victim Group' = 'LGBT'", markerOptions: { iconName: 'red_circle' }},
-      { where: "'Fake Victim Group' = 'Arabs/Muslims'", markerOptions: { iconName: 'grn_circle' }}      
+      { where: "'\"Victim\" Group' = 'Blacks'", markerOptions: { iconName: 'blu_circle' }},
+      { where: "'\"Victim\" Group' = 'Whites'", markerOptions: { iconName: 'wht_circle' }},
+      { where: "'\"Victim\" Group' = 'LGBT'", markerOptions: { iconName: 'red_circle' }},
+      { where: "'\"Victim\" Group' = 'Arabs/Muslims'", markerOptions: { iconName: 'grn_circle' }}      
     ]
   });
 
   hoaxBeneficiariesLayer.setMap(map);
-  window.column = 'Fake Victim Group';
+  window.column = '\"Victim\" Group';
   addLegend(map);
   initSelectmenu();
   
@@ -136,10 +136,10 @@ function initialize() {
         hoaxBeneficiariesLayer.setMap(null);
         groupFalselyImplicatedLayer.setMap(map);
         window.column = "Race of Hoaxer";
-      } else if (this.value == "Fake Victim Group") {
+      } else if (this.value == "\"Victim\" Group") {
         groupFalselyImplicatedLayer.setMap(null);
         hoaxBeneficiariesLayer.setMap(map);
-        window.column = "Fake Victim Group";
+        window.column = "\"Victim\" Group";
       }
       addLegend(map);
     });
