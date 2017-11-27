@@ -130,6 +130,8 @@ select {
 i {
   position: absolute;
   font-style: normal;
+  pointer-events: none;
+  line-height: 19px;
 }
 
 .mobile-icon {
