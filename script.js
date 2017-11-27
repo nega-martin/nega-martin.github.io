@@ -83,7 +83,12 @@ function initialize() {
   var map = new google.maps.Map(mapDiv, {
     center: new google.maps.LatLng(39.8283, -98.5795),
     zoom: 3,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    gestureHandling: 'greedy',
+    streetViewControl: false,
+    zoomControlOptions: {
+      position: google.maps.ControlPosition.LEFT_BOTTOM
+    },    
   });
 
   var groupFalselyImplicatedLayer = new google.maps.FusionTablesLayer({
