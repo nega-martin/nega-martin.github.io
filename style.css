@@ -87,6 +87,8 @@ html, body, #googft-mapCanvas {
 
 .gm-style-iw > div {
   margin-top: 10px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 #legend {
