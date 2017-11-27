@@ -12,6 +12,10 @@ html, body, #googft-mapCanvas {
   color: #3c3c3c;  
 }
 
+.googft-info-window > div {
+  max-width: 360px;
+}
+
 .infowindow-upper-box {
   display: flex;
 }
