@@ -85,10 +85,7 @@ function initialize() {
     zoom: 3,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     gestureHandling: 'greedy',
-    streetViewControl: false,
-    zoomControlOptions: {
-      position: google.maps.ControlPosition.LEFT_BOTTOM
-    },    
+    streetViewControl: false   
   });
 
   var groupFalselyImplicatedLayer = new google.maps.FusionTablesLayer({

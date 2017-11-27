@@ -24,6 +24,7 @@ html, body, #googft-mapCanvas {
 .perp-image > img {
   max-width: 100% !important; 
   object-fit: cover !important;
+  min-width: 150px;
 }
 
 .perp-name {
