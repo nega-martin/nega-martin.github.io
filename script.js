@@ -95,7 +95,7 @@ function initialize() {
     heatmap: { enabled: false },
     query: {
       select: "Address",
-      from: "1N7-IosfsDub5zKHASwsosJxvbxYsJYqPKVR5lYKa"
+      from: "1j5V1uovWKtgpMP-acVztbLWnWQ-KGThbu_Qg4dmv"
     },
     options: {
       styleId: 2,
@@ -114,7 +114,7 @@ function initialize() {
     heatmap: { enabled: false },
     query: {
       select: "Address",
-      from: "1N7-IosfsDub5zKHASwsosJxvbxYsJYqPKVR5lYKa"
+      from: "1j5V1uovWKtgpMP-acVztbLWnWQ-KGThbu_Qg4dmv"
     },
     options: {
       styleId: 2,
@@ -125,7 +125,7 @@ function initialize() {
       { where: "'\"Victim\" Group' = 'Blacks'", markerOptions: { iconName: 'blu_circle' }},
       { where: "'\"Victim\" Group' = 'Whites'", markerOptions: { iconName: 'wht_circle' }},
       { where: "'\"Victim\" Group' = 'LGBT'", markerOptions: { iconName: 'red_circle' }},
-      { where: "'\"Victim\" Group' = 'Arabs/Muslims'", markerOptions: { iconName: 'grn_circle' }}      
+      { where: "'Color Code (MJ)' = 'Religious'", markerOptions: { iconName: 'grn_circle' }}      
     ]
   });
 
